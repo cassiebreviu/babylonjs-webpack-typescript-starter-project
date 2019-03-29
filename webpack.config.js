@@ -2,7 +2,6 @@ const path = require("path");
 
 module.exports = {
     entry: [
-        'webpack-dev-server/client?http://0.0.0.0:8080',
         './src/index.ts'
      ] ,
     output: {
