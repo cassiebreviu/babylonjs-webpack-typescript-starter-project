@@ -14,7 +14,7 @@ Build Project <br>
 `npm run build`
 
 Run the script <br>
-`npx webpack-dev-server`
+`npm start`
 
 Open in VS Code <br>
 `code .`
