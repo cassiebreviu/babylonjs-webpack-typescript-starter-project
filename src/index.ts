@@ -8,12 +8,8 @@ function createScene(): Scene {
 
     // Create camera
     var camera = new BABYLON.UniversalCamera("UniversalCamera", new BABYLON.Vector3(0, 0, -10), scene);
-    camera.checkCollisions = true;
-    camera.applyGravity = true;
-    // Targets the camera to a particular position. In this case the scene origin
-    camera.setTarget(BABYLON.Vector3.Zero());
 
-    // Create sphere and add label
+    // Create sphere
     var sphere1: Mesh = MeshBuilder.CreateSphere("sphere", { diameter: 1 }, scene);
     sphere1.position.y = 5;
     sphere1.material = new BABYLON.StandardMaterial("sphere material", scene)
