@@ -6,15 +6,12 @@ function createScene(): Scene {
     // Create scene
     var scene: Scene = new Scene(engine);
 
-    // Create simple sphere
-    var sphere = BABYLON.Mesh.CreateIcoSphere("sphere", { radius: 0.2, flat: true, subdivisions: 1 }, scene);
-    sphere.position.y = 3;
-    sphere.material = new BABYLON.StandardMaterial("sphere material", scene)
-
-    // Lights and camera
-    var camera: ArcRotateCamera = new ArcRotateCamera("Camera", Math.PI / 2, Math.PI / 2, 2, Vector3.Zero(), scene);
-    camera.attachControl(canvas, true);
-    var light1: HemisphericLight = new HemisphericLight("light1", new Vector3(1, 1, 0), scene);
+    // Create camera
+    var camera = new BABYLON.UniversalCamera("UniversalCamera", new BABYLON.Vector3(0, 0, -10), scene);
+    camera.checkCollisions = true;
+    camera.applyGravity = true;
+    // Targets the camera to a particular position. In this case the scene origin
+    camera.setTarget(BABYLON.Vector3.Zero());
 
     // Create sphere and add label
     var sphere1: Mesh = MeshBuilder.CreateSphere("sphere", { diameter: 1 }, scene);
