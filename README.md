@@ -13,7 +13,7 @@ Install packages <br>
 Build Project <br>
 `npm run build`
 
-Run the script <br>
+Run the project <br>
 `npm start`
 
 Open in VS Code <br>
