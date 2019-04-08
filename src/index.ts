@@ -7,13 +7,19 @@ function createScene(): Scene {
     var scene: Scene = new Scene(engine);
 
     // Create camera
-    var camera = new BABYLON.UniversalCamera("UniversalCamera", new BABYLON.Vector3(0, 0, -10), scene);
+    var camera = new BABYLON.FreeCamera("camera1", new BABYLON.Vector3(6, 5, -10), scene);
+    camera.setTarget(BABYLON.Vector3.Zero());
+    camera.attachControl(canvas, true);
 
-    // Create sphere
-    var sphere1: Mesh = MeshBuilder.CreateSphere("sphere", { diameter: 1 }, scene);
-    sphere1.position.y = 5;
-    sphere1.material = new BABYLON.StandardMaterial("sphere material", scene)
-   
+    // Create light
+    var light = new BABYLON.HemisphericLight("light1", new BABYLON.Vector3(0, 1, 0), scene);
+    light.intensity = 0.7;
+    var sphere = BABYLON.Mesh.CreateSphere("sphere1", 16, 2, scene);
+    sphere.position.y = 1;
+
+    // Create
+    var ground = BABYLON.Mesh.CreateGround("ground1", 6, 6, 2, scene);
+
     // Enable VR
     var vrHelper = scene.createDefaultVRExperience();
     vrHelper.enableInteractions();
