@@ -21,8 +21,8 @@ function createScene(): Scene {
     var ground = BABYLON.Mesh.CreateGround("ground1", 6, 6, 2, scene);
 
     // Enable VR
-    var vrHelper = scene.createDefaultVRExperience();
-    vrHelper.enableInteractions();
+    //var vrHelper = scene.createDefaultVRExperience();
+    //vrHelper.enableInteractions();
 
     return scene;
 }
