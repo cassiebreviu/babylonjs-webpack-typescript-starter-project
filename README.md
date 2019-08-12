@@ -1,4 +1,4 @@
-# WebVR Babylonjs Webpack Typescript Starter Project
+# WebVR Babylonjs Webpack TypeScript Starter Project
 Starter project using babylonjs, webpack, and typescript.
 
 ### Steps to Run Starter Project
