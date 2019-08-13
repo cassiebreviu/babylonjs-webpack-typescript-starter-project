@@ -6,7 +6,7 @@ function createScene(): Scene {
     // Create scene
     var scene: Scene = new Scene(engine);
     scene.clearColor = BABYLON.Color4.FromColor3(BABYLON.Color3.Black());
-    
+
     // Create camera
     var camera = new BABYLON.FreeCamera("Camera", new BABYLON.Vector3(0, 0, -10), scene);
     camera.setTarget(BABYLON.Vector3.Zero());
@@ -26,8 +26,8 @@ function createScene(): Scene {
 
 
     // Enable VR
-    //var vrHelper = scene.createDefaultVRExperience();
-    //vrHelper.enableInteractions();
+    var helper = scene.createDefaultVRExperience({ createDeviceOrientationCamera: false });
+    helper.enableInteractions();
 
     return scene;
 }
