@@ -10,19 +10,18 @@
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "ts-loader": "^5.3.3",
-    "typescript": "^3.3.4000",
-    "webpack": "^4.29.6",
-    "webpack-cli": "^3.3.0",
-    "webpack-dev-server": "^3.2.1"
-  },
+  "devDependencies": {},
   "dependencies": {
-    "babylonjs": "^3.3.0",
-    "babylonjs-gui": "^3.3.0",
-    "babylonjs-loaders": "^3.3.0",
-    "babylonjs-materials": "^3.3.0",
-    "babylonjs-procedural-textures": "^3.3.0",
-    "cannon": "^0.6.2"
+    "babylonjs": "^4.1.0",
+    "babylonjs-gui": "^4.1.0",
+    "babylonjs-loaders": "^4.1.0",
+    "babylonjs-materials": "^4.1.0",
+    "babylonjs-procedural-textures": "^4.1.0",
+    "cannon": "^0.6.2",
+    "ts-loader": "^7.0.2",
+    "typescript": "^3.8.3",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
   }
 }
