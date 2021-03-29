@@ -1,7 +1,5 @@
-/node_modules
-/dist
-*.log
-.idea
-.vscode
-package-lock.json
-*.d.ts
+node_modules/
+**/crash*.txt
+
+# for this project, we want the stuff in bin
+!bin/jenkit.js
